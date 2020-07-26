@@ -1,0 +1,39 @@
+/* Портфолио */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  & a {
+    text-decoration: none;
+  }
+}
+
+.button {
+  margin-right: 8px;
+  padding: 6px 22px;
+
+  color: $title-text-color;
+  background-color: $different-bg-color;
+  border: none;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+
+  @include transitionTime(background-color);
+  @include transitionTime(color);
+
+  &:hover,
+  &:focus {
+    color: $different-text-color;
+    background-color: $accent-bg-color;
+  }
+  &-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}

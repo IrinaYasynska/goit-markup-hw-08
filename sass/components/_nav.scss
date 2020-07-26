@@ -1,0 +1,52 @@
+.saite-nav {
+  display: flex;
+
+  & .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  @media screen and (max-width: 767px) {
+    @include centeredFlex(flex);
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    & .link {
+      padding: 0;
+      margin-bottom: 40px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 81px;
+    & .item + .item {
+      margin-left: 50px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 85px;
+  }
+}
+
+.nav-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.current {
+  position: relative;
+  display: block;
+  color: $accent-color;
+
+  &::after {
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    content: '';
+    height: 4px;
+    width: 100%;
+    background-color: $accent-color;
+    border-radius: 2px;
+  }
+}

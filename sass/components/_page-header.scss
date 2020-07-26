@@ -1,0 +1,14 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  background-color: $nav-bg-color;
+}
+.main-nav {
+  display: flex;
+  align-items: baseline;
+
+  @media screen and (max-width: 767px) {
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+}

@@ -1,0 +1,41 @@
+/* задачи */
+
+.visually-hidden {
+  @extend %visually-hidden;
+}
+.task-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.task {
+  display: flex;
+  flex-wrap: wrap;
+
+  &-item {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+
+    &:nth-child(4n) {
+      margin-right: 0px;
+    }
+  }
+
+  &-icon {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+    background-color: $different-bg-color;
+    border-radius: 4px;
+  }
+
+  & .title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  &-description {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}

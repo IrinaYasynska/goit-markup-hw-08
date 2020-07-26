@@ -1,0 +1,50 @@
+.address {
+  display: flex;
+  margin-left: auto;
+  flex-direction: column;
+
+  @media screen and (max-width: 767px) {
+    @include centeredFlex(flex);
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+    & .contact + .contact {
+      margin-left: 30px;
+    }
+  }
+}
+
+.contact {
+  @include centeredFlex(flex);
+
+  color: $primary-text-color;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+
+  @include transitionTime(color);
+
+  @media screen and (max-width: 767px) {
+    &.link {
+      margin-bottom: 16px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &.link {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+}

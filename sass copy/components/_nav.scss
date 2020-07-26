@@ -1,0 +1,32 @@
+.saite-nav {
+  display: flex;
+  margin-left: 85px;
+  // & .item + .item {
+  //   margin-left: 50px;
+  // }
+  // & .link {
+  //   display: block;
+  //   padding-top: 32px;
+  //   padding-bottom: 32px;
+  // }
+}
+// .nav-icon {
+//   margin-right: 10px;
+//   fill: currentColor;
+// }
+// .current {
+//   position: relative;
+//   display: block;
+//   color: $accent-color;
+
+//   &::after {
+//     position: absolute;
+//     bottom: 0px;
+//     display: block;
+//     content: '';
+//     height: 4px;
+//     width: 100%;
+//     background-color: $accent-color;
+//     border-radius: 2px;
+//   }
+// }
