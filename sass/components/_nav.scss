@@ -8,7 +8,8 @@
   }
 
   @media screen and (max-width: 767px) {
-    @include centeredFlex(flex);
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     padding-top: 60px;
     padding-bottom: 60px;

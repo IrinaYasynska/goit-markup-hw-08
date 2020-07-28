@@ -1,0 +1,49 @@
+/* задачи */
+
+.visually-hidden {
+  @extend %visually-hidden;
+}
+.task-section {
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+
+.task {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+
+    &-item {
+      width: calc((100% - 60px) / 2);
+      margin: 15px;
+      @media screen and (min-width: 768px) {
+        width: calc((100% - 30px * 4) / 4);
+      }
+    }
+  }
+
+  &-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding: 25px;
+    background-color: $different-bg-color;
+    border-radius: 4px;
+  }
+
+  & .title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    @media screen and (max-width: 767px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &-description {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+}
