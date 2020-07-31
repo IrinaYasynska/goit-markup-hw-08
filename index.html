@@ -27,7 +27,12 @@
           aria-controls="menu-container"
           data-menu-button
         >
-          <svg class="shadow" width="40" height="40" aria-label="Кнопка мобильного меню">
+          <svg
+            class="shadow"
+            width="40"
+            height="40"
+            aria-label="Кнопка мобильного меню"
+          >
             <use
               class="icon-cross"
               href="./images/symbol-defs.svg#icon-menu"
@@ -38,33 +43,35 @@
             ></use>
           </svg>
         </button>
-          <div class="nav-container" id="nav-container" data-menu>         
-            <nav >
-              <ul class="saite-nav list">
-                <li class="item">
-                  <a href="#" class="link current">Студия</a>
-                </li>
-                <li class="item">
-                  <a href="./portfolio.html" class="link">Портфолио</a>
-                </li>
-                <li class="item"><a href="#" class="link">Контакты</a></li>
-              </ul>
-            </nav class="nav">
-            <address class="address">
-              <a href="mailto:info@devstudio.com" class="contact link">
-                <svg class="nav-icon" width="16px" height="11.2px">
-                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-              <a href="tel:+380961111111" class="contact link">
-                <svg class="nav-icon" width="10px" height="15px">
-                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                </svg>
+        <div class="nav-container" id="nav-container" data-menu>
+          <nav class="nav">
+            <ul class="saite-nav list">
+              <li class="item">
+                <a href="#" class="link current">Студия</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li class="item">
+                <a href="#" class="link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="address">
+            <a href="mailto:info@devstudio.com" class="contact link">
+              <svg class="nav-icon" width="16px" height="11.2px">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+            <a href="tel:+380961111111" class="contact link">
+              <svg class="nav-icon" width="10px" height="15px">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
 
-                +38 096 111 11 11</a
-              >
-            </address>
+              +38 096 111 11 11</a
+            >
+          </address>
         </div>
       </div>
     </header>
@@ -142,7 +149,12 @@
             <li class="trend-item">
               <a href="">
                 <img
-                  src="./images/destop-appli.jpg"
+                  srcset="
+                    ./images/comp_1200.jpg    1x,
+                    ./images/comp_1200@2x.jpg 2x,
+
+                  "
+                  src="./images/comp_1200.jpg"
                   alt="Десктопные приложения"
                   width="370"
                   height="294"
@@ -153,7 +165,12 @@
             <li class="trend-item">
               <a href="">
                 <img
-                  src="./images/mob-appl.jpg"
+                  srcset="
+                    ./images/mob_1200.jpg    1x,
+                    ./images/mob_1200@2x.jpg 2x,
+
+                  "
+                  src="./images/mob_1200.jpg"
                   alt="Мобильные приложения"
                   width="370"
                   height="294"
@@ -164,7 +181,12 @@
             <li class="trend-item">
               <a href="">
                 <img
-                  src="./images/dizain.jpg"
+                  srcset="
+                    ./images/monitor_1200.jpg    1x,
+                    ./images/monitor_1200@2x.jpg 2x,
+
+                  "
+                  src="./images/monitor_1200.jpg"
                   alt="Дизайнерские решения"
                   width="370"
                   height="294"
@@ -180,12 +202,28 @@
           <h2 class="title section-title">Наша команда</h2>
           <ul lang="en" class="list team-container">
             <li class="expert">
-              <img
-                src="./images/johnsmit.jpg"
-                alt="фото"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/johnsmit_480.jpg    1x,
+                    ./images/johnsmit_480@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="
+                    ./images/johnsmit_1200.jpg    1x,
+                    ./images/johnsmit_1200@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/johnsmit_768.jpg    1x,
+                    ./images/johnsmit_768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+
+                <img src="./images/johnsmit_768.jpg" alt="фото"
+              /></picture>
               <h3 class="title name">John Smith</h3>
               <p class="position">Product Designer</p>
               <ul class="list team-icon">
@@ -221,12 +259,28 @@
             </li>
 
             <li class="expert">
-              <img
-                src="./images/martastewart.jpg"
-                alt="фото"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/martastewart_480.jpg    1x,
+                    ./images/martastewart_480@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="
+                    ./images/martastewart_1200.jpg    1x,
+                    ./images/martastewart_1200@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/martastewart_768.jpg    1x,
+                    ./images/martastewart_768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+
+                <img src="./images/martastewart_768.jpg" alt="фото"
+              /></picture>
               <h3 class="title name">Marta Stewart</h3>
               <p class="position">Frontend Developer</p>
               <ul class="list team-icon">
@@ -262,12 +316,31 @@
             </li>
 
             <li class="expert">
-              <img
-                src="./images/robertjakis.jpg"
-                alt="фото"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/robertjakis_480.jpg    1x,
+                    ./images/robertjakis_480@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/robertjakis_1200.jpg    1x,
+                    ./images/robertjakis_1200@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/robertjakis_768.jpg    1x,
+                    ./images/robertjakis_768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img src="./images/robertjakis_768.jpg" alt="фото" />
+              </picture>
               <h3 class="title name">Robert Jakis</h3>
               <p class="position">Marketing</p>
               <ul class="list team-icon">
@@ -303,12 +376,31 @@
             </li>
 
             <li class="expert">
-              <img
-                src="./images/martindoe.jpg"
-                alt="фото"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/martindoe_480.jpg    1x,
+                    ./images/martindoe_480@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/martindoe_1200.jpg    1x,
+                    ./images/martindoe_1200@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/martindoe_768.jpg    1x,
+                    ./images/martindoe_768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img src="./images/martindoe_768.jpg" alt="фото" />
+              </picture>
               <h3 class="title name">Martin Doe</h3>
               <p class="position">UI Designer</p>
               <ul class="list team-icon">

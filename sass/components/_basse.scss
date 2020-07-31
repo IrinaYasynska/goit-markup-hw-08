@@ -44,12 +44,15 @@ img {
   color: $title-text-color;
 }
 
-// .section-title {
-//   font-weight: 700;
-//   font-size: 36px;
-//   line-height: 1.17;
-//   text-align: center;
-// }
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  @media screen and (max-width: 767px) {
+    font-size: 28px;
+  }
+}
 
 .text-style {
   font-weight: 700;

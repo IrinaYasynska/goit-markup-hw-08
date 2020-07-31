@@ -1,0 +1,174 @@
+/* Футер */
+.footer {
+  color: $different-text-color;
+  background-color: $footer-bg-color;
+
+  @media screen and (max-width: 1199px) {
+    & .text-style {
+      text-align: center;
+    }
+  }
+}
+
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @include centeredFlex(flex);
+  }
+}
+
+.address-logo {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+    margin-left: 76px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 69px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+}
+
+.address-footer {
+  display: block;
+  margin-bottom: 9px;
+  font-style: normal;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @include centeredFlex(flex);
+    flex-direction: column;
+  }
+}
+
+.contact-footer {
+  display: block;
+  margin-bottom: 9px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.icon-footer {
+  display: flex;
+  margin-top: 20px;
+}
+.social-network .link {
+  @include centeredFlex(flex);
+  margin-right: 10px;
+  margin-bottom: 60px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+
+  @include transitionTime(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+.footer-form {
+  display: flex;
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.footer-field {
+  position: relative;
+  background-color: $footer-bg-color;
+}
+.footer-input {
+  height: 50px;
+  width: 450px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0;
+  }
+  //
+
+  background-color: $footer-bg-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.footer-label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-100%);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  @include transitionTime(transform);
+  color: rgba(255, 255, 255, 0.6);
+  @media screen and (min-width: 1200px) {
+    transform: translateY(-50%);
+  }
+}
+.footer-field:focus-within > .footer-label,
+.footer-input:not(:placeholder-shown) + .footer-label {
+  transform: translateY(-50%) translateX(-65px);
+}
+
+@media screen and (max-width: 767px) {
+  .footer-field:focus-within > .footer-label,
+  .footer-input:not(:placeholder-shown) + .footer-label {
+    transform: translateY(-60px);
+  }
+}
+
+.button-footer {
+  @include centeredFlex(flex);
+
+  margin-left: 12px;
+  padding: 10px 29px;
+  width: 200px;
+
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: $different-text-color;
+  background-color: $accent-bg-color;
+  text-decoration: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+.button-icon {
+  margin-left: 10px;
+}
