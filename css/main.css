@@ -474,7 +474,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero-title {
-    width: 696px;
+    max-width: 696px;
   }
 }
 
