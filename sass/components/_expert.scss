@@ -25,7 +25,6 @@
   }
   .expert {
     display: block;
-    margin: 15px;
     padding-bottom: 24px;
     background-color: $nav-bg-color;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -37,6 +36,7 @@
       margin-bottom: 30px;
     }
     @media screen and (min-width: 768px) {
+      margin: 15px;
       width: calc((100% - 60px) / 2);
     }
 
