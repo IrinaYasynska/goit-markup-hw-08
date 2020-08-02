@@ -23,29 +23,10 @@
 body {
   margin: auto;
   color: #757575;
-  outline: 1px solid #e5e5e5;
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-
-@media screen and (min-width: 480px) {
-  body {
-    max-width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  body {
-    max-width: 1600px;
-  }
 }
 
 img {
@@ -59,6 +40,18 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -521,6 +514,7 @@ img {
   opacity: 1;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 3;
 }
 
 .backdrop.is-hidden {
@@ -1263,6 +1257,12 @@ img {
   background-color: #2f303a;
 }
 
+@media screen and (max-width: 480px) {
+  .footer-field {
+    width: 100%;
+  }
+}
+
 .footer-input {
   height: 50px;
   width: 450px;
@@ -1274,6 +1274,12 @@ img {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer-input {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1476,7 +1482,12 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  white-space: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio .title {
+    white-space: nowrap;
+  }
 }
 
 .product-card {
@@ -1498,6 +1509,7 @@ img {
           align-items: center;
   width: 100%;
   height: 100%;
+  overflow: auto;
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
   font-size: 18px;

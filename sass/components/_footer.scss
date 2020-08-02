@@ -108,11 +108,17 @@
 .footer-field {
   position: relative;
   background-color: $footer-bg-color;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 }
 .footer-input {
   height: 50px;
   width: 450px;
   margin-bottom: 20px;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
   @media screen and (min-width: 1200px) {
     width: 358px;
     margin-bottom: 0;
@@ -135,6 +141,7 @@
   letter-spacing: 0.03em;
   @include transitionTime(transform);
   color: rgba(255, 255, 255, 0.6);
+
   @media screen and (min-width: 1200px) {
     transform: translateY(-50%);
   }
